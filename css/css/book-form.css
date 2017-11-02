@@ -1,0 +1,233 @@
+/* BOOK FORM */
+.book {
+  background: #a31836;
+}
+.book:first-child {
+  margin-bottom: 20px;
+}
+.book-now {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding-right: 15px;
+  padding-left: 0;
+}
+.book-table__title {
+  padding: 15px 0;
+  font-family: CabinBold;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+  background: #a31836;
+}
+.book-room__title {
+  margin-bottom: 25px;
+  padding: 15px 0;
+  font-family: CabinBold;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+  background: #323232;
+}
+.book-room__calendar {
+  padding: 0 18px;
+  margin-bottom: 28px;
+}
+.book-room__col {
+  display: inline-block;
+  position: relative;
+  width: 45%;
+  margin: 0 2.5%;
+}
+.book-room__col-title {
+  margin-bottom: 10px;
+  font-family: CabinRegular;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.book-room__col-month {
+  font-family: CabinRegular;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  background: #323232;
+}
+.book-room__col-calendar {
+  display: block;
+  max-width: 100%;
+  font-family: CabinBold;
+  text-align: center;
+  font-size: 40px;
+  border: 0;
+  padding: 9px 0 4px;
+}
+.book-room__col-open {
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  background: #323232;
+  padding: 2px 0;
+}
+.book-room__col:hover {
+  cursor: pointer;
+}
+.book-room-passengers__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.book-room-passengers__title {
+  margin-left: 26px;
+  font-family: CabinRegular;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.book-room-passengers__select {
+  margin-right: 80px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #ffffff;
+}
+.book-room-passengers__select > .fa-chevron-down {
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  z-index: 1;
+  padding: 13.1px 7px;
+  font-size: 10px;
+  color: #ffffff;
+  background: #323232;
+}
+.book-room-passengers__select > select {
+  -webkit-appearance: none;
+  /* padding: 0 9px; */
+  position: relative;
+  padding: 0 35px 0 5px;
+  z-index: 2;
+  font-family: CabinBold;
+  font-size: 25px;
+  color: #323232;
+  background: rgba(0, 0, 0, 0);
+}
+.book-room-btn {
+  display: block;
+  margin: 25px 25px 18px;
+  padding: 5px 0;
+  font-family: CabinBold;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  background: #323232;
+}
+.book-room-btn:hover {
+  cursor: pointer;
+  background: rgba(50, 50, 50, 0.4);
+}
+/* Datapicker */
+.ui-widget,
+.ui-widget.ui-widget-content {
+  border: 0;
+}
+.ui-datepicker {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  font-size: 12px;
+  background: #323232;
+  border: 0;
+  border-radius: 0;
+}
+.ui-datepicker .ui-datepicker-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.ui-datepicker .ui-datepicker-header {
+  border: 0;
+  background: #a31836;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+  background: none;
+  border: 1px solid #e4e4e4;
+  font-family: CabinRegular;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+.ui-state-default:hover,
+.ui-widget-content .ui-state-default:hover {
+  background: #a31836;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+  margin: 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  position: relative;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+}
+.ui-datepicker .ui-datepicker-prev {
+  float: left;
+}
+.ui-datepicker .ui-datepicker-next {
+  float: right;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+  position: initial;
+}
+@media (max-width: 991px) and (min-width: 769px) {
+  .book-now {
+    flex-direction: row;
+    padding-right: 0px;
+    margin-top: 18px;
+  }
+  .book {
+    width: 48.5%;
+  }
+  .book:first-child {
+    margin-right: 3%;
+    margin-bottom: 0;
+  }
+  .book-table__title,
+  .book-room__title {
+    font-size: 28px;
+    padding: 9px 0;
+    margin-bottom: 0;
+  }
+  .book-room {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .book {
+    width: 100%;
+    margin: 0;
+  }
+  .book-now {
+    margin-top: 21px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .book-room__col:first-child {
+    padding-left: 25px;
+  }
+  .book-room__col:last-child {
+    padding-right: 25px;
+  }
+  .book-room-passengers__title {
+    margin-left: 80px;
+    font-size: 20px;
+  }
+}

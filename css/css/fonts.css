@@ -1,0 +1,12 @@
+@font-face {
+  font-family: CabinSemiBold;
+  src: url(../fonts/Cabin-SemiBold.ttf);
+}
+@font-face {
+  font-family: CabinBold;
+  src: url(../fonts/Cabin-Bold.ttf);
+}
+@font-face {
+  font-family: CabinRegular;
+  src: url(../fonts/Cabin-Regular.ttf);
+}

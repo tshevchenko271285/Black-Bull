@@ -1,0 +1,263 @@
+@font-face {
+  font-family: CabinSemiBold;
+  src: url(../fonts/Cabin-SemiBold.ttf);
+}
+@font-face {
+  font-family: CabinBold;
+  src: url(../fonts/Cabin-Bold.ttf);
+}
+@font-face {
+  font-family: CabinRegular;
+  src: url(../fonts/Cabin-Regular.ttf);
+}
+html,
+body,
+div,
+header,
+i,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p,
+form,
+input,
+select,
+option,
+button,
+img {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  border: 0;
+}
+/* HEADER */
+.header {
+  background: url(../img/bg-home-header-banner.jpg);
+  background-size: cover;
+}
+.header__logo {
+  margin: 190px auto 193px;
+  text-align: center;
+}
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: CabinSemiBold;
+  background: rgba(50, 50, 50, 0.8);
+}
+.header-menu__item {
+  margin: 11px 0 13px 40px;
+  list-style: none;
+  font-size: 24.5px;
+  color: #ffffff;
+}
+.header-menu__item:first-child {
+  margin-left: 0;
+}
+/* TEXT BLOCK */
+.text {
+  color: #323232;
+}
+.text__title {
+  margin: 48px auto 28px;
+  font-family: CabinBold;
+  font-size: 45px;
+}
+.text__content {
+  font-family: CabinRegular;
+  font-size: 18px;
+  line-height: 24px;
+}
+/* BOOK FORM */
+.book-now {
+  padding-right: 15px;
+  padding-left: 0;
+}
+.book-table {
+  margin: 40px auto 20px;
+  padding: 15px 0;
+  font-family: CabinBold;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+  background: #a31836;
+}
+.book-room {
+  background: #a31836;
+}
+.book-room__title {
+  margin-bottom: 25px;
+  padding: 15px 0;
+  font-family: CabinBold;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+  background: #323232;
+}
+.book-room__calendar {
+  padding: 0 18px;
+  margin-bottom: 28px;
+}
+.book-room__col {
+  display: inline-block;
+  width: 45%;
+  margin: 0 2.5%;
+}
+.book-room__col-title {
+  margin-bottom: 10px;
+  font-family: CabinRegular;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.book-room__col-month {
+  font-family: CabinRegular;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  background: #323232;
+}
+.book-room__col-calendar {
+  display: block;
+  max-width: 100%;
+  font-family: CabinBold;
+  text-align: center;
+  font-size: 40px;
+  border: 0;
+  padding: 9px 0 4px;
+}
+.book-room__col-open {
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  background: #323232;
+  padding: 2px 0;
+}
+.book-room-passengers__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.book-room-passengers__title {
+  margin-left: 26px;
+  font-family: CabinRegular;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.book-room-passengers__select {
+  margin-right: 80px;
+}
+.book-room-passengers__select > .fa-chevron-down {
+  position: relative;
+  top: -5.4px;
+  padding: 13.1px 7px;
+  font-size: 10px;
+  color: #ffffff;
+  background: #323232;
+}
+.book-room-passengers__select > select {
+  -webkit-appearance: none;
+  padding: 0 9px;
+  font-family: CabinBold;
+  font-size: 25px;
+  color: #323232;
+}
+.book-room-btn {
+  display: block;
+  margin: 25px 25px 18px;
+  padding: 5px 0;
+  font-family: CabinBold;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  background: #323232;
+}
+.book-room-btn:hover {
+  cursor: pointer;
+  background: rgba(50, 50, 50, 0.4);
+}
+/* Image Links */
+.image-links {
+  margin-top: 38px;
+  padding: 0 30px;
+}
+.image-link {
+  display: block;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.image-link:hover > img {
+  transform: scale(1.1);
+}
+.image-link > img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+.image-link__inbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+}
+.image-link__inbox:hover {
+  cursor: pointer;
+}
+.image-link__title {
+  width: 77%;
+  margin-top: 15px;
+  padding: 10px 0;
+  font-family: CabinBold;
+  font-size: 37px;
+  text-align: center;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+}
+/* Footer */
+.footer {
+  margin-top: 32px;
+  font-family: CabinRegular;
+  color: #ffffff;
+  background: #323232;
+}
+.footer__title {
+  margin: 28px auto 20px;
+  font-family: CabinBold;
+  font-size: 30px;
+}
+.footer__phone {
+  font-size: 16px;
+  line-height: 25px;
+}
+.footer__email {
+  font-size: 16px;
+  line-height: 25px;
+}
+.footer__addr {
+  font-size: 16px;
+  line-height: 17px;
+}
+.footer__opening-times {
+  font-size: 16px;
+  color: #ffffff;
+}
+.footer .footer__opening-times-day,
+.footer .footer__opening-times-time {
+  line-height: 25px;
+}
+.footer .footer__newsletter-text {
+  font-size: 16px;
+  line-height: 24px;
+}

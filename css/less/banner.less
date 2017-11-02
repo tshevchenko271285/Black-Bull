@@ -1,0 +1,26 @@
+/* Banner */
+.banner {
+	background: url(../img/bg-home-header-banner.jpg);
+	background-size: cover;
+
+	&__logo {
+	}
+	&__logo > img {
+		display: block;
+		margin: 190px auto 193px;
+		width: 470px;
+		height: auto;
+	}
+}
+@media (max-width: 991px) and (min-width: 769px) {
+	.banner__logo > img {
+		width: 325px;
+		margin: 85px auto 85px;
+	}
+}
+@media (max-width: 768px) {
+	.banner__logo > img {
+		width: 348px;
+		margin: 30px auto 32px;
+	}
+}
