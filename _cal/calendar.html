@@ -1,0 +1,60 @@
+<form id="calendar" class="book-room clearfix">
+	<div class="book-room__calendar">
+		<div id="arriving" class="book-room__col" ng-click="$ctrl.setArriving()">
+			<h4 class="book-room__col-title">ARRIVING</h4>
+			<div class="book-room__col-month">January</div>
+			<input type="text" class="book-room__col-calendar" value="{{$ctrl.today}}">
+			<div class="book-room__col-open">
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div id="departing" class="book-room__col" ng-click="$ctrl.setDeparting()">
+			<h4 class="book-room__col-title">DEPARTING</h4>
+			<div class="book-room__col-month">January</div>
+			<input type="text" class="book-room__col-calendar" value="{{$ctrl.tomorrow}}">
+			<div class="book-room__col-open">
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+	<div class="book-room-passengers">
+		<div class="book-room-passengers__item">
+			<span class="book-room-passengers__title">NUMBER OF ADULTS</span>
+			<span class="book-room-passengers__select">
+				<select name="" id="">
+				 	<option value="1" selected="default">1</option>
+				 	<option value="2">2</option>
+				 	<option value="3">3</option>
+				 	<option value="4">4</option>
+				 	<option value="5">5</option>
+				 	<option value="6">6</option>
+				 	<option value="7">7</option>
+				 	<option value="8">8</option>
+				 	<option value="9">9</option>
+				 	<option value="10">10</option>
+				</select> 
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			 </span>
+		</div>
+		<div class="book-room-passengers__item">
+			<span class="book-room-passengers__title">NUMBER OF CHILDREN</span>
+			<span class="book-room-passengers__select">
+				<select name="" id="">
+				 	<option value="0" selected="default">0</option>
+				 	<option value="1">1</option>
+				 	<option value="2">2</option>
+				 	<option value="3">3</option>
+				 	<option value="4">4</option>
+				 	<option value="5">5</option>
+				 	<option value="6">6</option>
+				 	<option value="7">7</option>
+				 	<option value="8">8</option>
+				 	<option value="9">9</option>
+				 	<option value="10">10</option>
+				</select> 
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			 </span>
+		</div>
+	</div>
+	<div type="submit" class="center-block book-room-btn">Book Now</div>
+</form>

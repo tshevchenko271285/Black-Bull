@@ -14,6 +14,8 @@
     <link href="css/jquery-ui.theme.css" rel="stylesheet">
  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/custom.css">
+<script src="js/angular.min.js"></script>
+<script src="js/calendar.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,7 +46,7 @@
 		<li class="header-menu__item">Book Online</li>
 	</ul>
 </header>
-<div class="container">
+<div class="container" ng-app="calendarApp" >
 	<div class="row">
 		<div class="col-sm-12 col-md-4 col-md-push-8 book-now">
 			<div class="book">
@@ -54,7 +56,8 @@
 			</div>
 			<div class="book">
 					<h3 class="book-room__title">Book A Room</h3>
-				<form class="book-room clearfix">
+					<calendar></calendar>
+				<!-- <form class="book-room clearfix">
 					<div class="book-room__calendar">
 						<div class="book-room__col">
 							<h4 class="book-room__col-title">ARRIVING</h4>
@@ -113,7 +116,7 @@
 						</div>
 					</div>
 					<div type="submit" class="center-block book-room-btn">Book Now</div>
-				</form>
+				</form> -->
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-8 col-md-pull-4 text">
